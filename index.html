@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://bootswatch.com/5/morph/bootstrap.min.css">
+    <title>Book Storage APP</title>
+</head>
+<body>
+    <h1 class="text-center m-3 fw-bolder text-danger">My Book Storage App with Local Storage</h1>
+    <form id="authorForm">
+        <div class="mb-3 m-5">
+          <label for="exampleInputAuthorName" class="form-label">Author Name</label>
+          <input type="text" class="form-control" id="authorName" aria-describedby="emailHelp" required>
+        </div>
+        <div class="mb-3 m-5">
+          <label for="exampleInputAuthorNationality" class="form-label">Nationality</label>
+          <input required type="text" class="form-control" id="authorNationality">
+        </div>
+        <div class="mb-3 m-5">
+          <label class="form-label" for="exampleCheck1">Book Name</label>
+          <input type="text" class="form-control" id="bookName" required>
+        </div>
+        <div class="mb-3 m-5">
+            <label class="form-label" for="exampleCheck1">ISBN</label>
+            <input type="number" class="form-control" id="isbn" required>
+          </div>
+        <button type="submit" id="submit" class="btn btn-primary float-end me-5" onclick="display()">Add Book</button>
+      </form>
+      <p id="para" class="m-3 text-danger fs-2"></p>
+      <div id="itemList" class="list-group mt-5 p-2 text-warning fs-3 container"></div>
+   <script src="index.js"></script>
+</body>
+</html>
